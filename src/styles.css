@@ -4,6 +4,25 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+/* add an amazing animation to the social icons */ 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -123,3 +142,8 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+/* add an amazing animation to the social icons */
+img.socialIcon:hover {
+  animation: shake 0.5s;
+} 
